@@ -1,3 +1,12 @@
+---
+license: apache-2.0
+title: Chatbot
+sdk: streamlit
+emoji: 🚀
+colorFrom: red
+colorTo: yellow
+short_description: LangGraph Chatbot
+---
 # ✨Agentic AI Chatbot with LangGraph🧑‍💻
 
 ## 📌 Project Overview
