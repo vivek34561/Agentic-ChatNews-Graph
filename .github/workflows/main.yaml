@@ -23,6 +23,8 @@ jobs:
       
           git remote add hf https://vivek231:${HF_TOKEN}@huggingface.co/spaces/vivek231/chtbt || true
           git fetch hf
-          git rebase hf/main
+      
+          git rebase hf/main --strategy-option theirs
           git push hf main
+
 
