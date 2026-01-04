@@ -14,12 +14,7 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      - name: Sync with Hugging Face Space
+      - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          git remote add hf https://vivek231:${HF_TOKEN}@huggingface.co/spaces/vivek231/chtbt || true
-          git fetch hf
-          git rebase hf/main
-          git push hf main
-
+        run: git push https://vivek231:$HF_TOKEN@huggingface.co/spaces/vivek231/chtbt main
